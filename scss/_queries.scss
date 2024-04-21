@@ -1,0 +1,243 @@
+
+
+/* ------------responsive---------------- */
+
+@media  (max-width: 1200px) {
+
+    .videito{
+        position: relative;
+        display: block;
+        height: 800px;
+
+        .texto-video{
+
+            button{
+                font-size: 20px;
+                position: absolute;
+                left: 40px;
+                bottom: -50px;
+              }
+        }
+
+        .video{
+            position: relative;
+            width: 100%;
+           }
+      }
+}
+
+
+@media (max-width: 1100px){
+
+/* --------checkbox catalogo--------- */
+.form-catalogo{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+    
+  .catalogo{
+    display: block;
+  }
+}
+
+/* --------fin checkbox catalogo--------- */
+
+@media (max-width: 800px) {
+
+    h1{
+        font-size: 35px;
+      }
+    
+      p{
+        font-size: 20px;
+      }
+
+
+/* --------video/index------- */
+
+.videito{
+    position: relative;
+    display: block;
+    height: 800px;
+
+    .texto-video{
+        button{
+            font-size: 20px;
+            position: absolute;
+            left: 40px;
+            bottom: -50px;
+          }
+    }
+  }
+
+  /* --------fin video/index------ */
+
+  /* ---------cards---------------- */
+
+  .card-producto {
+    max-width: 100%;
+    display: flex;
+    gap: 40px;
+    margin: 10px;
+    overflow-x:auto ;
+    padding-top: 40px;
+
+    img {
+        border-top-right-radius: 17px;
+        border-top-left-radius: 17px;
+        overflow: hidden;
+        height: 300px;
+      }
+
+      .opinion {
+        display: flex;
+        flex-direction: column;
+        /* flex-grow: 1; */
+        width: 200px;
+        height: 300px;
+        margin-bottom: 25px;
+        border: 2px solid #EF476F;
+        border-radius: 20px;
+        background-color: #FCFCFC;
+        box-shadow: 0 1px 8px;
+        transition: 0.7s;
+
+        h2 {
+            font-size:15px;
+            margin: 5px;
+            width: fit-content;
+            height: 20px;
+            font-weight: bold;
+          }
+
+          p {
+            font-size: 10px;
+            margin: 10px 10px;
+            width: fit-content;
+          }
+
+          img {
+            object-fit: cover;
+            height: 250px;       
+          }
+      }
+
+      .opinion:hover {
+        background-color: #c7dbec;
+        box-shadow: 0 1px 20px;
+        z-index: 100px;
+      }
+
+      .valoracion {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        border-bottom: 2px solid #EF476F;
+        height: 10;
+
+        p {
+            line-height: 50px;
+            text-align: center;
+          }     
+      }
+  }
+/* ----------- fin cards---------------- */
+
+/* ------------checkbox catalogo-------- */
+
+#lista-form {
+
+  .form-catalogo{
+
+      h4{
+
+        font-size: 1rem;
+      }
+
+      label{
+
+       font-size: 0.7rem;
+      }
+    }
+  }
+
+  /* -----------fin checkbox catalogo--------- */
+
+  .footer-conteiner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+
+    .info-footer {
+      display: none;
+      font-size: 10px;
+    }
+
+    .redes {
+      width: 100%;
+      margin-left: 20px;
+      justify-content: space-between;
+
+      .iconos-redes {
+        display: flex;
+        flex-direction: row;
+        
+        .bxl-instagram-alt {
+          font-size: 24px;
+        }
+
+        .bxl-facebook-circle {
+          font-size: 24px;
+        }
+
+        label {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+/* ------------fin footer---------------- */
+
+@media (max-width: 500px) {
+
+  h1{
+    font-size: 30px;
+    padding-bottom: 10px;
+  }
+  
+  h2{
+    font-size: 20px;
+  }
+  
+  p{
+    font-size: 12px;
+  }
+
+  /* ------------video/index-------------- */
+
+  .videito{
+    display: block;
+    height: 900px;
+
+    .video{
+      position: relative;
+      width: 100%;
+     }
+  }
+  /* ----------fin video/index----------- */
+
+  /* --------checkbox/catalogo----------- */
+
+  .form-catalogo{
+    display: block;
+  }
+
+  #lista-form{
+
+    form{
+      padding: 10px;
+    }
+  }
+}

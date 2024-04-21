@@ -1,0 +1,467 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+} 
+
+html{
+  min-height: 100vh;
+}
+body{
+  min-height: 100vh;
+}
+
+h2 {
+  font-family: "Patua One", serif;
+  font-weight: 400 ;
+   color: #019C9E;
+}
+
+h4{
+  font-family: "Patua One", serif;
+  font-weight: 400 ;
+   color: #EF476F;
+}
+
+h1{
+  font-size: 45px;
+  color: #019C9E;
+
+}
+
+
+p{
+  font-size: 24px;
+  font-family: "Rubik", sans-serif;
+}
+/* -------------Navegacion------------- */
+
+.navbar{
+    background-color: #EF476F !important;
+    grid-area:navbar;
+
+        .navbar-nav{
+            color: #fff; 
+
+            .nav-link{
+                color: #fff;
+            }
+
+            .nav-link:hover{
+                color: #b7e2e0;
+              }
+        }
+
+        .navbar-brand{
+            color: #fff;
+          }
+  }
+
+  /* --------- Fin navegacion------------------ */
+
+  /* ---------sobre nosotros------------- */
+
+
+  .articulo1{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    
+    .portada-texto{
+        width: 80%;
+        padding: 50px;
+      }
+
+      img{
+        object-fit: cover;
+        border-bottom-left-radius: 2%;
+      }
+  }
+
+  .articulo2{
+    display: grid;
+    grid-template-columns: auto 2fr;
+
+    .texto-articulo2{
+        width: 100%;
+        padding: 50px;
+      }
+
+      img{
+        object-fit: cover;
+        width: 700px;
+        height: 700px;
+      }
+  }
+
+  /* ----------------fin sobre nosotros-------------- */
+
+  /* ----------------Video Index--------------------- */
+
+
+  .videito{
+    position: relative;
+    display: grid;
+    grid-template-columns: 800px auto;
+    border-bottom: #0e7b7d solid;
+    border-top: #0e7b7d solid;;
+    background-color: #019C9E;
+
+    .texto-video{
+        position: relative;
+        max-width: 100%;
+        padding: 40px;
+        color: #fff;
+      }
+
+      .video{
+        width: 800px;
+        height: 450px;
+      }
+
+      .texto-video{
+
+        p{
+            font-size: 20px;
+          }
+
+          button{
+            font-size: 20px;
+            position: absolute;
+            left: 40px;
+            bottom: 50px;
+          }
+      }
+  }
+
+  /* ---------------fin video index-------------- */
+
+  /* ---------------lista de juegos 1--------------- */
+
+  .card-producto {
+    max-width: 100%;
+    display: flex;
+    gap: 40px;
+    margin: 10px;
+    overflow-x:auto ;
+    padding-top: 40px;
+
+    img {
+        border-top-right-radius: 17px;
+        border-top-left-radius: 17px;
+        overflow: hidden;
+        height: 300px;
+      }
+
+      .opinion {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        width: 300px;
+        margin-bottom: 25px;
+        border: 2px solid #4763ef;
+        border-radius: 20px;
+        background-color: #FCFCFC;
+        box-shadow: 0 1px 8px;
+        transition: 0.7s;
+
+        p {
+            font-size: 14px;
+            margin: 20px 40px 40px 20px;
+            width: fit-content;
+          }
+
+        h2 {
+            font-size: 24px;
+            margin: 20px;
+            width: fit-content;
+            height: 40px;
+          }
+
+        .valoracion {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            border-bottom: 2px solid #4763ef;
+            height: 10;
+
+            p {
+                line-height: 50px;
+                text-align: center;
+              }
+          }
+      }
+
+      .opinion:hover {
+        background-color: #90c0ea;
+        box-shadow: 0 1px 20px;
+        z-index: 100px;
+      }
+  }
+  
+  /* -------------Galeria----------------- */
+
+  .texto-galeria{
+    padding: 20px;
+  }
+
+  .galeria-conteiner{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 8px;
+    padding: 20px;
+    grid-template-areas: 
+    "cthulhu cthulhu catan taco "
+    "censj dados dados gaia "
+    "censj gaia2 gaia2 hdp "
+    "random2 melomano reino reino "
+    "random2 random1 random1 monopoly ";
+
+    .cthulhu{
+        grid-area: cthulhu;
+      }
+      
+      .catan{
+        grid-area: catan;
+      
+      }
+
+      .censj{
+        grid-area: censj;
+      }
+
+      .dados{
+        grid-area: dados;
+      }
+
+      .dyd{
+        grid-area: dados;
+      }
+
+      .gaia{
+        grid-area: gaia;
+      }
+
+      .gaia2{
+        grid-area: gaia2;
+      }
+
+      .hdp{
+        grid-area: hdp;
+      }
+
+      .random2{
+        grid-area: random2;
+      }
+
+      .melomano{
+        grid-area: melomano;
+      }
+
+      .reino{
+        grid-area: reino;
+      }
+
+      .random1{
+        grid-area: random1;
+      }
+
+      .monopoly{
+        grid-area: monopoly;
+      }
+
+      .taco{
+        grid-area: taco;
+      }
+  }
+
+  .imagenes{
+
+    img{
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+  }
+
+  /* -----------catalogo------------------ */
+
+  .catalogo{
+    display: grid;
+    grid-template-columns:20% 80% ;
+    grid-template-areas: 
+    "header header"
+    "formulario juegos"
+    "footer footer";
+  }
+
+  .products{
+    grid-area: juegos;
+    padding-top: 50px;
+  }
+
+  header{
+    grid-area: header;
+  }
+
+  #lista-form{
+    padding-top: 100px;
+
+    form{
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
+        gap:5px
+      }
+  }
+
+  /* ----------------------contacto------------------------------ */
+
+  .contacto-grid{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    flex-grow: 2;
+    grid-template-areas:
+    "header header"
+    "contacto form"
+    "footer footer";
+  }
+
+  .form-contacto{
+    grid-area: form;
+    padding: 50px;
+
+    p{
+  padding-top: 14px;
+}
+  }
+
+  .contacto-texto {
+    grid-area: contacto;
+    padding: 50px 20px;
+
+    p{
+        padding-top: 14px;
+      }
+  }
+
+  .form-contacto {
+    display: grid;
+    grid-template-columns: 100%;
+  
+  }
+
+  form{
+    .formulario{
+        padding-bottom: 40px;
+
+        label {
+            font-size: 18px;
+            color: #000;
+          }
+
+          input {
+            color: #989898;
+            background-color: none;
+            border: solid 1px rgba(0, 0, 0, 0.1);
+            border-radius: 4px;
+            padding: 14px;
+            font-size: 16px;
+            padding-right: 600px;
+          }
+
+          input:focus {
+            border: solid 2px #354B9A;
+            outline: none;
+          }
+      }
+
+      .formulario-mensaje{
+        padding-bottom: 40px;
+
+        label {
+            font-size: 18px;
+            color: #000;
+          }
+
+          input {
+            padding-left: 10px;
+            padding-top: 10px;
+            padding-bottom: 100px;
+            padding-right: 600px;
+            color: #989898;
+            background-color: none;
+            border: solid 1px rgba(0, 0, 0, 0.1);
+            border-radius: 4px;
+            font-size: 16px;
+          }
+
+          input:focus {
+            border: solid 2px #354B9A;
+            outline: none;
+          }
+      }
+  }
+
+  .boton-contacto{
+    width: 80px;
+    height: 40px;
+  }
+
+  /* -------------footer-------------------- */
+
+  .footer-conteiner {
+    display: flex;
+    background-color: #EF476F;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+    grid-area: footer;
+
+    .info-footer {
+        margin-left: 20px;
+
+        a {
+            font-size: 1.2rem;
+            color: #fff;
+          }
+      }
+      
+      .redes{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+
+        label {
+            color: #fff;
+            letter-spacing: 1px;
+          }
+
+          .iconos-redes {
+            display: flex;
+            flex-direction: row;
+          }
+
+          .iconos-redes{
+
+            .bxl-instagram-alt {
+                font-size: 44px;
+                color: #fff;
+              }
+
+              .bxl-facebook-circle {
+                font-size: 44px;
+                color: #fff;
+              }
+          }
+      }
+  }
+
+
+
+  /* -------------------fin footer------------------- */
+
+  @import "_queries";
+  
