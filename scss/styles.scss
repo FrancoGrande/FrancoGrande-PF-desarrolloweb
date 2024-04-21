@@ -1,3 +1,8 @@
+@import "_queries";
+@import "_variables";
+@import "_condicionales";
+
+
 *{
     margin: 0;
     padding: 0;
@@ -13,6 +18,7 @@ body{
 }
 
 h2 {
+  font-size: calc($hsmall*1.04);
   font-family: "Patua One", serif;
   font-weight: 400 ;
    color: #019C9E;
@@ -25,20 +31,20 @@ h4{
 }
 
 h1{
-  font-size: 45px;
+  font-size: $hlarge;
   color: #019C9E;
 
 }
 
 
 p{
-  font-size: 24px;
+  font-size: $plarge;
   font-family: "Rubik", sans-serif;
 }
 /* -------------Navegacion------------- */
 
 .navbar{
-    background-color: #EF476F !important;
+    background-color: $background2 !important;
     grid-area:navbar;
 
         .navbar-nav{
@@ -105,7 +111,7 @@ p{
     grid-template-columns: 800px auto;
     border-bottom: #0e7b7d solid;
     border-top: #0e7b7d solid;;
-    background-color: #019C9E;
+    background-color: $background1;
 
     .texto-video{
         position: relative;
@@ -122,11 +128,11 @@ p{
       .texto-video{
 
         p{
-            font-size: 20px;
+            font-size: $pmedium;
           }
 
           button{
-            font-size: 20px;
+            font-size: $pmedium;
             position: absolute;
             left: 40px;
             bottom: 50px;
@@ -413,10 +419,10 @@ p{
 
   .footer-conteiner {
     display: flex;
-    background-color: #EF476F;
+    background-color: $background2;
     justify-content: space-between;
     align-items: center;
-    height: 90px;
+    height: calc($size2*1.34);
     grid-area: footer;
 
     .info-footer {
@@ -462,6 +468,3 @@ p{
 
 
   /* -------------------fin footer------------------- */
-
-  @import "_queries";
-  

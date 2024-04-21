@@ -1,4 +1,4 @@
-
+@import "_variables";
 
 /* ------------responsive---------------- */
 
@@ -49,7 +49,7 @@
       }
     
       p{
-        font-size: 20px;
+        font-size: $pmedium;
       }
 
 
@@ -212,7 +212,7 @@
   }
   
   p{
-    font-size: 12px;
+    font-size: $psmall;
   }
 
   /* ------------video/index-------------- */
