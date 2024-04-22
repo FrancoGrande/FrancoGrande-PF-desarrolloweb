@@ -1,7 +1,4 @@
-@import "_queries";
 @import "_variables";
-
-
 
 *{
     margin: 0;
@@ -364,7 +361,7 @@ p{
 
   .contacto-texto {
     grid-area: contacto;
-    padding: 10px 20px;
+    padding: 40px 20px;
 
 
     p{
