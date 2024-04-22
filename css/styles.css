@@ -237,14 +237,17 @@
   .footer-conteiner .redes .iconos-redes label {
     font-size: 14px;
   }
-  .contacto-contenedor {
+  .contacto-grid {
     display: block;
   }
-  .contacto-contenedor .contacto-texto {
+  .contacto-grid .contacto-contenedor {
+    display: block;
+  }
+  .contacto-grid .contacto-contenedor .contacto-texto {
     width: 70%;
     margin-right: 40px;
   }
-  .contacto-contenedor .contacto-texto p {
+  .contacto-grid .contacto-contenedor .contacto-texto p {
     font-size: 24px;
     color: #105698;
     font-size: 32px;
@@ -964,14 +967,17 @@ form .formulario-mensaje input:focus {
   .footer-conteiner .redes .iconos-redes label {
     font-size: 14px;
   }
-  .contacto-contenedor {
+  .contacto-grid {
     display: block;
   }
-  .contacto-contenedor .contacto-texto {
+  .contacto-grid .contacto-contenedor {
+    display: block;
+  }
+  .contacto-grid .contacto-contenedor .contacto-texto {
     width: 70%;
     margin-right: 40px;
   }
-  .contacto-contenedor .contacto-texto p {
+  .contacto-grid .contacto-contenedor .contacto-texto p {
     font-size: 24px;
     color: #105698;
     font-size: 32px;
