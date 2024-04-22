@@ -209,7 +209,7 @@
   
   .portada-texto{
       width: 100%;
-      padding: 50px;
+      padding: 20px;
 
       h1{
         font-size: $hregular;
@@ -246,7 +246,7 @@ p{
 
   .texto-articulo2{
       width: 100%;
-      padding: 50px;
+      padding: 20px;
 
       h1{
         font-size: $hsmall;
@@ -295,13 +295,17 @@ p{
 
     .info-footer {
       display: none;
-      font-size: 10px;
+
     }
 
     .redes {
       width: 100%;
       margin-left: 20px;
       justify-content: space-between;
+
+      label {
+        font-size: $pxsmall;
+      }
 
       .iconos-redes {
         display: flex;
@@ -315,13 +319,12 @@ p{
           font-size: 24px;
         }
 
-        label {
-          font-size: 14px;
-        }
+        
       }
     }
   }
-
+  
+  /* ------------fin footer---------------- */
   .contacto-grid{
     display: block;
 
@@ -333,33 +336,49 @@ p{
         margin-right: 40px;
   
         p {
-          font-size: 24px;
+          font-size: 20px;
           color: #105698;
           font-size: 32px;
           letter-spacing: 2px;
         }
       }
     }
+  
+
+  form{
+
+    .formulario{
+        padding-bottom: 20px;
+         padding-top: 20px;
+
+         input{
+          padding-right: 300px;
+         }
+      }
+      .formulario-mensaje{
+          
+        input{
+          padding-right: 385px;
+         }
+       }
   }
 }
-/* ------------fin footer---------------- */
+}
 
-@media (max-width: 780){}
-
-  h1{
-    font-size: $hsmall;
-  }
+@media (max-width: 800px){
 
   .row{
-    
-    .col-6{
-      width: 100%;
-      padding: 20px 40px;
+    padding-left: 20px;
+    h1{
+      font-size: $hsmall;
     }
-      img{
-        display: none;
-      }
+
+    p{
+      font-size: $psmall;
+    }
+  }
 }
+
 @media (max-width: 500px) {
 
   h1{
@@ -388,12 +407,12 @@ p{
   }
   /* ----------fin video/index----------- */
 
-/* -------------sobre nosotros----------- */
 
+  /* -------------sobre nosotros----------- */
 
 .articulo1{
   display: block;
- 
+  
   
   .portada-texto{
       width: 100%;
@@ -464,4 +483,61 @@ p{
       padding: 10px;
     }
   }
+/* --------fin checkbox/catalogo---------- */
+
+/* --------contacto----------------------- */
+.contacto-grid{
+
+form{
+
+  .formulario{
+      padding-bottom: 20px;
+       padding-top: 20px;
+
+       input{
+        padding-right: 100px;
+       }
+    }
+    .formulario-mensaje{
+        
+      input{
+        padding-right: 185px;
+       }
+     }
+}
+}
+/* --------galeria----------------------- */
+
+.texto-galeria{
+  h1{
+    font-size: $hsmall;
+
+
+  }
+}
+
+}
+
+@media(max-width:360px){
+
+  .contacto-grid{
+
+    form{
+    
+      .formulario{
+          padding-bottom: 20px;
+           padding-top: 20px;
+    
+           input{
+            padding-right: 00px;
+           }
+        }
+        .formulario-mensaje{
+            
+          input{
+            padding-right: 0px;
+           }
+         }
+    }
+    }
 }

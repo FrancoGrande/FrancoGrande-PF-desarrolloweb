@@ -7,7 +7,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
+
 } 
 
 html{
@@ -66,6 +66,17 @@ p{
 
   /* --------- Fin navegacion------------------ */
 
+/* ----------index----------------------- */
+
+  .row{
+    padding: 0px 20px;
+  }
+
+  .titulo-juegosdemesa{
+    padding: 0px 20px;
+  }
+
+
   /* ---------sobre nosotros------------- */
 
 
@@ -75,7 +86,7 @@ p{
     
     .portada-texto{
         width: 100%;
-        padding: 50px;
+        padding: px;
       }
 
       img{
@@ -310,6 +321,10 @@ p{
   .products{
     grid-area: juegos;
     padding-top: 50px;
+    
+    h1{
+      padding-left: 20px;
+    }
   }
 
   header{
@@ -317,12 +332,11 @@ p{
   }
 
   #lista-form{
-    padding-top: 30px;
-
+    padding: 30px 20px;
     form{
         display: flex;
         flex-direction: column;
-        padding: 30px;
+        padding: 0px;
         gap:5px
       }
   }
@@ -332,7 +346,7 @@ p{
   .contacto-grid{
     display: grid;
     grid-template-columns: 50% 50%;
-    flex-grow: 2;
+    grid-template-rows: 3% 94% 3%;
     grid-template-areas:
     "header header"
     "contacto form"
@@ -341,7 +355,7 @@ p{
 
   .form-contacto{
     grid-area: form;
-    padding: 50px;
+    padding: 20px;
 
     p{
   padding-top: 14px;
@@ -350,7 +364,8 @@ p{
 
   .contacto-texto {
     grid-area: contacto;
-    padding: 50px 20px;
+    padding: 10px 20px;
+
 
     p{
         padding-top: 14px;
@@ -365,7 +380,10 @@ p{
 
   form{
     .formulario{
-        padding-bottom: 40px;
+      display: grid;
+      padding-bottom: 40px;
+      padding-top: 20px;
+         
 
         label {
             font-size: 18px;
@@ -390,6 +408,7 @@ p{
 
       .formulario-mensaje{
         padding-bottom: 40px;
+        display: grid;
 
         label {
             font-size: 18px;

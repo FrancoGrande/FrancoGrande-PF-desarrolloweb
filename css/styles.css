@@ -160,7 +160,7 @@
   }
   .articulo1 .portada-texto {
     width: 100%;
-    padding: 50px;
+    padding: 20px;
   }
   .articulo1 .portada-texto h1 {
     font-size: 35px;
@@ -187,7 +187,7 @@
   }
   .articulo2 .texto-articulo2 {
     width: 100%;
-    padding: 50px;
+    padding: 20px;
   }
   .articulo2 .texto-articulo2 h1 {
     font-size: 30px;
@@ -217,12 +217,14 @@
   }
   .footer-conteiner .info-footer {
     display: none;
-    font-size: 10px;
   }
   .footer-conteiner .redes {
     width: 100%;
     margin-left: 20px;
     justify-content: space-between;
+  }
+  .footer-conteiner .redes label {
+    font-size: 8px;
   }
   .footer-conteiner .redes .iconos-redes {
     display: flex;
@@ -234,9 +236,7 @@
   .footer-conteiner .redes .iconos-redes .bxl-facebook-circle {
     font-size: 24px;
   }
-  .footer-conteiner .redes .iconos-redes label {
-    font-size: 14px;
-  }
+  /* ------------fin footer---------------- */
   .contacto-grid {
     display: block;
   }
@@ -248,25 +248,33 @@
     margin-right: 40px;
   }
   .contacto-grid .contacto-contenedor .contacto-texto p {
-    font-size: 24px;
+    font-size: 20px;
     color: #105698;
     font-size: 32px;
     letter-spacing: 2px;
   }
+  .contacto-grid form .formulario {
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+  .contacto-grid form .formulario input {
+    padding-right: 300px;
+  }
+  .contacto-grid form .formulario-mensaje input {
+    padding-right: 385px;
+  }
 }
-/* ------------fin footer---------------- */
-h1 {
-  font-size: 30px;
+@media (max-width: 800px) {
+  .row {
+    padding-left: 20px;
+  }
+  .row h1 {
+    font-size: 30px;
+  }
+  .row p {
+    font-size: 12px;
+  }
 }
-
-.row .col-6 {
-  width: 100%;
-  padding: 20px 40px;
-}
-.row img {
-  display: none;
-}
-
 @media (max-width: 500px) {
   h1 {
     font-size: 30px;
@@ -336,6 +344,34 @@ h1 {
   #lista-form form {
     padding: 10px;
   }
+  /* --------fin checkbox/catalogo---------- */
+  /* --------contacto----------------------- */
+  .contacto-grid form .formulario {
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+  .contacto-grid form .formulario input {
+    padding-right: 100px;
+  }
+  .contacto-grid form .formulario-mensaje input {
+    padding-right: 185px;
+  }
+  /* --------galeria----------------------- */
+  .texto-galeria h1 {
+    font-size: 30px;
+  }
+}
+@media (max-width: 360px) {
+  .contacto-grid form .formulario {
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+  .contacto-grid form .formulario input {
+    padding-right: 0px;
+  }
+  .contacto-grid form .formulario-mensaje input {
+    padding-right: 0px;
+  }
 }
 /* -------background-------- */
 /* --------tamaño de h------ */
@@ -396,6 +432,15 @@ p {
 }
 
 /* --------- Fin navegacion------------------ */
+/* ----------index----------------------- */
+.row {
+  padding: 0px 20px;
+}
+
+.titulo-juegosdemesa {
+  padding: 0px 20px;
+}
+
 /* ---------sobre nosotros------------- */
 .articulo1 {
   display: grid;
@@ -403,7 +448,7 @@ p {
 }
 .articulo1 .portada-texto {
   width: 100%;
-  padding: 50px;
+  padding: px;
 }
 .articulo1 img {
   object-fit: cover;
@@ -588,18 +633,21 @@ p {
   grid-area: juegos;
   padding-top: 50px;
 }
+.products h1 {
+  padding-left: 20px;
+}
 
 header {
   grid-area: header;
 }
 
 #lista-form {
-  padding-top: 30px;
+  padding: 30px 20px;
 }
 #lista-form form {
   display: flex;
   flex-direction: column;
-  padding: 30px;
+  padding: 0px;
   gap: 5px;
 }
 
@@ -607,13 +655,13 @@ header {
 .contacto-grid {
   display: grid;
   grid-template-columns: 50% 50%;
-  flex-grow: 2;
+  grid-template-rows: 3% 94% 3%;
   grid-template-areas: "header header" "contacto form" "footer footer";
 }
 
 .form-contacto {
   grid-area: form;
-  padding: 50px;
+  padding: 20px;
 }
 .form-contacto p {
   padding-top: 14px;
@@ -621,7 +669,7 @@ header {
 
 .contacto-texto {
   grid-area: contacto;
-  padding: 50px 20px;
+  padding: 10px 20px;
 }
 .contacto-texto p {
   padding-top: 14px;
@@ -633,7 +681,9 @@ header {
 }
 
 form .formulario {
+  display: grid;
   padding-bottom: 40px;
+  padding-top: 20px;
 }
 form .formulario label {
   font-size: 18px;
@@ -654,6 +704,7 @@ form .formulario input:focus {
 }
 form .formulario-mensaje {
   padding-bottom: 40px;
+  display: grid;
 }
 form .formulario-mensaje label {
   font-size: 18px;
@@ -890,7 +941,7 @@ form .formulario-mensaje input:focus {
   }
   .articulo1 .portada-texto {
     width: 100%;
-    padding: 50px;
+    padding: 20px;
   }
   .articulo1 .portada-texto h1 {
     font-size: 35px;
@@ -917,7 +968,7 @@ form .formulario-mensaje input:focus {
   }
   .articulo2 .texto-articulo2 {
     width: 100%;
-    padding: 50px;
+    padding: 20px;
   }
   .articulo2 .texto-articulo2 h1 {
     font-size: 30px;
@@ -947,12 +998,14 @@ form .formulario-mensaje input:focus {
   }
   .footer-conteiner .info-footer {
     display: none;
-    font-size: 10px;
   }
   .footer-conteiner .redes {
     width: 100%;
     margin-left: 20px;
     justify-content: space-between;
+  }
+  .footer-conteiner .redes label {
+    font-size: 8px;
   }
   .footer-conteiner .redes .iconos-redes {
     display: flex;
@@ -964,9 +1017,7 @@ form .formulario-mensaje input:focus {
   .footer-conteiner .redes .iconos-redes .bxl-facebook-circle {
     font-size: 24px;
   }
-  .footer-conteiner .redes .iconos-redes label {
-    font-size: 14px;
-  }
+  /* ------------fin footer---------------- */
   .contacto-grid {
     display: block;
   }
@@ -978,25 +1029,33 @@ form .formulario-mensaje input:focus {
     margin-right: 40px;
   }
   .contacto-grid .contacto-contenedor .contacto-texto p {
-    font-size: 24px;
+    font-size: 20px;
     color: #105698;
     font-size: 32px;
     letter-spacing: 2px;
   }
+  .contacto-grid form .formulario {
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+  .contacto-grid form .formulario input {
+    padding-right: 300px;
+  }
+  .contacto-grid form .formulario-mensaje input {
+    padding-right: 385px;
+  }
 }
-/* ------------fin footer---------------- */
-h1 {
-  font-size: 30px;
+@media (max-width: 800px) {
+  .row {
+    padding-left: 20px;
+  }
+  .row h1 {
+    font-size: 30px;
+  }
+  .row p {
+    font-size: 12px;
+  }
 }
-
-.row .col-6 {
-  width: 100%;
-  padding: 20px 40px;
-}
-.row img {
-  display: none;
-}
-
 @media (max-width: 500px) {
   h1 {
     font-size: 30px;
@@ -1065,6 +1124,34 @@ h1 {
   }
   #lista-form form {
     padding: 10px;
+  }
+  /* --------fin checkbox/catalogo---------- */
+  /* --------contacto----------------------- */
+  .contacto-grid form .formulario {
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+  .contacto-grid form .formulario input {
+    padding-right: 100px;
+  }
+  .contacto-grid form .formulario-mensaje input {
+    padding-right: 185px;
+  }
+  /* --------galeria----------------------- */
+  .texto-galeria h1 {
+    font-size: 30px;
+  }
+}
+@media (max-width: 360px) {
+  .contacto-grid form .formulario {
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+  .contacto-grid form .formulario input {
+    padding-right: 0px;
+  }
+  .contacto-grid form .formulario-mensaje input {
+    padding-right: 0px;
   }
 }
 
