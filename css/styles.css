@@ -2,7 +2,6 @@
 /* -------background-------- */
 /* --------tamaño de h------ */
 /* --------tamaño de p------- */
-/* -------condicionales------- */
 /* ------------responsive---------------- */
 @media (max-width: 1200px) {
   .videito {
@@ -32,7 +31,7 @@
   }
 }
 /* --------fin checkbox catalogo--------- */
-@media (max-width: 800px) {
+@media (max-width: 992px) {
   h1 {
     font-size: 35px;
   }
@@ -183,12 +182,6 @@
 /* -------background-------- */
 /* --------tamaño de h------ */
 /* --------tamaño de p------- */
-/* -------condicionales------- */
-/* -------background-------- */
-/* --------tamaño de h------ */
-/* --------tamaño de p------- */
-/* -------condicionales------- */
-/* ---------color navbar--------- */
 * {
   margin: 0;
   padding: 0;
@@ -564,5 +557,13 @@ form .formulario-mensaje input:focus {
 }
 
 /* -------------------fin footer------------------- */
+/* ---------color navbar--------- */
+.footer-conteiner {
+  background-color: #EF476F;
+}
+
+.navbar {
+  background-color: #EF476F !important;
+}
 
 /*# sourceMappingURL=styles.css.map */

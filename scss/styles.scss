@@ -1,6 +1,6 @@
 @import "_queries";
 @import "_variables";
-@import "_condicionales";
+
 
 
 *{
@@ -468,3 +468,6 @@ p{
 
 
   /* -------------------fin footer------------------- */
+
+
+  @import "_condicionales";

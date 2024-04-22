@@ -4,6 +4,7 @@
 
 @media  (max-width: 1200px) {
 
+
     .videito{
         position: relative;
         display: block;
@@ -42,8 +43,9 @@
 
 /* --------fin checkbox catalogo--------- */
 
-@media (max-width: 800px) {
-
+@media (max-width: 992px) {
+ 
+  
     h1{
         font-size: 35px;
       }
@@ -164,6 +166,7 @@
   /* -----------fin checkbox catalogo--------- */
 
   .footer-conteiner {
+    
     display: flex;
     align-items: center;
     justify-content: center;
