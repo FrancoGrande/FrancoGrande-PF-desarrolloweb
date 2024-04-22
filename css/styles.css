@@ -281,7 +281,7 @@ header {
 .contacto-grid {
   display: grid;
   grid-template-columns: 50% 50%;
-  grid-template-rows: 3% 94% 3%;
+  grid-template-rows: 5% 90% 5%;
   grid-template-areas: "header header" "contacto form" "footer footer";
 }
 
