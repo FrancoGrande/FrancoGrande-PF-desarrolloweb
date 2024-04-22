@@ -4,6 +4,59 @@
 
 @media  (max-width: 1200px) {
 
+  .articulo1{
+    display: block;
+   
+    
+    .portada-texto{
+        width: 100%;
+        padding: 50px;
+
+        h1{
+          font-size: $hregular;
+        }
+
+        p{
+          font-size: $pmedium;
+        }
+      }
+
+      img{
+        object-fit: cover;
+        height: 10%;
+        width: $var1;
+      }
+  }
+
+.info2{
+  padding: 20px 20px;
+
+  h1{
+    font-size: $hregular;
+  }
+
+  p{
+    font-size: $pmedium;
+  }
+
+}
+
+  .articulo2{
+    display: block;
+ 
+
+    .texto-articulo2{
+        width: 100%;
+        padding: 50px;
+      }
+
+      img{
+        object-fit: cover;
+        width: 100%;
+        height: 700px;
+      }
+  }
+
 
     .videito{
         position: relative;
@@ -60,9 +113,12 @@
 .videito{
     position: relative;
     display: block;
-    height: 800px;
+    height: 600px;
 
     .texto-video{
+      p{
+        font-size: $psmall;
+      }
         button{
             font-size: 20px;
             position: absolute;
@@ -145,6 +201,71 @@
   }
 /* ----------- fin cards---------------- */
 
+/* ------------sobre nosotros----------- */
+
+.articulo1{
+  display: block;
+ 
+  
+  .portada-texto{
+      width: 100%;
+      padding: 50px;
+
+      h1{
+        font-size: $hregular;
+      }
+
+      p{
+        font-size: $psmall;
+      }
+    }
+
+    img{
+      object-fit: cover;
+      height:400px;
+      width: $var1;
+    }
+}
+
+.info2{
+padding: 20px 20px;
+
+h1{
+  font-size: $hsmall;
+}
+
+p{
+  font-size: $psmall;
+}
+
+}
+
+.articulo2{
+  display: block;
+
+
+  .texto-articulo2{
+      width: 100%;
+      padding: 50px;
+
+      h1{
+        font-size: $hsmall;
+      }
+      
+      p{
+        font-size: $psmall;
+      }
+    }
+
+    img{
+      object-fit: cover;
+      width: 100%;
+      height:400px;
+    }
+}
+
+/* -----------fin sobre nosotros -------   */
+
 /* ------------checkbox catalogo-------- */
 
 #lista-form {
@@ -200,8 +321,27 @@
       }
     }
   }
+
+  .contacto-contenedor {
+    display: block;
+
+    .contacto-texto {
+      width: 70%;
+      margin-right: 40px;
+
+      p {
+        font-size: 24px;
+        color: #105698;
+        font-size: 32px;
+        letter-spacing: 2px;
+      }
+    }
+
+  }
 }
 /* ------------fin footer---------------- */
+
+
 
 @media (max-width: 500px) {
 
@@ -230,6 +370,70 @@
      }
   }
   /* ----------fin video/index----------- */
+
+/* -------------sobre nosotros----------- */
+
+
+.articulo1{
+  display: block;
+ 
+  
+  .portada-texto{
+      width: 100%;
+      padding: 20px;
+
+      h1{
+        font-size: 25px;
+      }
+
+      p{
+        font-size: $pxsmall;
+      }
+    }
+
+    img{
+      object-fit: cover;
+      height:200px;
+      width: $var1;
+    }
+}
+
+.info2{
+padding: 20px 20px;
+
+
+
+p{
+  font-size: $pxsmall;
+}
+
+}
+
+.articulo2{
+  display: block;
+
+
+  .texto-articulo2{
+      width: 100%;
+      padding: 20px;
+
+      
+      
+      p{
+        font-size: $pxsmall;
+      }
+    }
+
+    img{
+      object-fit: cover;
+      width: 100%;
+      height:200px;
+    }
+}
+
+
+
+/* ----------fin sobre nosotros----------- */
 
   /* --------checkbox/catalogo----------- */
 

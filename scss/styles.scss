@@ -74,14 +74,19 @@ p{
     grid-template-columns: 2fr 1fr;
     
     .portada-texto{
-        width: 80%;
+        width: 100%;
         padding: 50px;
       }
 
       img{
         object-fit: cover;
         border-bottom-left-radius: 2%;
+        height: 100vh;
       }
+  }
+
+  .info2{
+    padding: 40px 20px;
   }
 
   .articulo2{
@@ -471,3 +476,4 @@ p{
 
 
   @import "_condicionales";
+  @import "_queries";
