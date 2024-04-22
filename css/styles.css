@@ -81,7 +81,7 @@
   .videito {
     position: relative;
     display: block;
-    height: 600px;
+    height: 700px;
   }
   .videito .texto-video p {
     font-size: 12px;
@@ -252,6 +252,18 @@
   }
 }
 /* ------------fin footer---------------- */
+h1 {
+  font-size: 30px;
+}
+
+.row .col-6 {
+  width: 100%;
+  padding: 20px 40px;
+}
+.row img {
+  display: none;
+}
+
 @media (max-width: 500px) {
   h1 {
     font-size: 30px;
@@ -266,7 +278,7 @@
   /* ------------video/index-------------- */
   .videito {
     display: block;
-    height: 900px;
+    height: 760px;
   }
   .videito .video {
     position: relative;
@@ -427,7 +439,7 @@ p {
 .videito .texto-video {
   position: relative;
   max-width: 100%;
-  padding: 40px;
+  padding: 20px;
   color: #fff;
 }
 .videito .video {
@@ -579,7 +591,7 @@ header {
 }
 
 #lista-form {
-  padding-top: 100px;
+  padding-top: 30px;
 }
 #lista-form form {
   display: flex;
@@ -796,7 +808,7 @@ form .formulario-mensaje input:focus {
   .videito {
     position: relative;
     display: block;
-    height: 600px;
+    height: 700px;
   }
   .videito .texto-video p {
     font-size: 12px;
@@ -967,6 +979,18 @@ form .formulario-mensaje input:focus {
   }
 }
 /* ------------fin footer---------------- */
+h1 {
+  font-size: 30px;
+}
+
+.row .col-6 {
+  width: 100%;
+  padding: 20px 40px;
+}
+.row img {
+  display: none;
+}
+
 @media (max-width: 500px) {
   h1 {
     font-size: 30px;
@@ -981,7 +1005,7 @@ form .formulario-mensaje input:focus {
   /* ------------video/index-------------- */
   .videito {
     display: block;
-    height: 900px;
+    height: 760px;
   }
   .videito .video {
     position: relative;

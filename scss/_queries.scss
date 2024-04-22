@@ -113,7 +113,7 @@
 .videito{
     position: relative;
     display: block;
-    height: 600px;
+    height: 700px;
 
     .texto-video{
       p{
@@ -340,8 +340,22 @@ p{
 }
 /* ------------fin footer---------------- */
 
+@media (max-width: 780){}
 
+  h1{
+    font-size: $hsmall;
+  }
 
+  .row{
+    
+    .col-6{
+      width: 100%;
+      padding: 20px 40px;
+    }
+      img{
+        display: none;
+      }
+}
 @media (max-width: 500px) {
 
   h1{
@@ -361,7 +375,7 @@ p{
 
   .videito{
     display: block;
-    height: 900px;
+    height: 760px;
 
     .video{
       position: relative;
