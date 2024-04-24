@@ -488,33 +488,33 @@ p{
 /* --------contacto----------------------- */
 .contacto-grid{
 
-form{
+  form{
 
-  .formulario{
-      padding-bottom: 20px;
-       padding-top: 20px;
+    .formulario{
+        padding-bottom: 20px;
+         padding-top: 20px;
 
-       input{
-        padding-right: 100px;
-       }
-    }
+         input{
+          padding-right: 100px;
+         }
+      }
     .formulario-mensaje{
         
       input{
         padding-right: 185px;
        }
      }
-}
+  }
 }
 /* --------galeria----------------------- */
 
-.texto-galeria{
-  h1{
-    font-size: $hsmall;
+  .texto-galeria{
+   h1{
+      font-size: $hsmall;
 
 
+    }
   }
-}
 
 }
 
@@ -537,7 +537,7 @@ form{
           input{
             padding-right: 0px;
            }
-         }
+        }
     }
-    }
+  }
 }
