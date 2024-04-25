@@ -107,9 +107,9 @@ p {
   position: relative;
   display: grid;
   grid-template-columns: 800px auto;
-  border-bottom: #0e7b7d solid;
-  border-top: #0e7b7d solid;
-  background-color: #0e7b7d;
+  border-bottom: #ff3967 solid;
+  border-top: #ff3967 solid;
+  background-color: #ff3967;
 }
 .videito .texto-video {
   position: relative;
@@ -129,6 +129,48 @@ p {
   position: absolute;
   left: 40px;
   bottom: 50px;
+  outline: none;
+  cursor: pointer;
+  border: none;
+  padding: 0.9rem 2rem;
+  margin: 0;
+  display: inline-block;
+  letter-spacing: 0.2rem;
+  font-weight: 700;
+  font-size: 17px;
+  overflow: hidden;
+  background: #3a98ce;
+  color: white;
+  border-radius: 5px;
+}
+.videito .texto-video button span {
+  position: relative;
+  z-index: 10;
+  transition: color 0.4s;
+  color: #fff;
+}
+.videito .texto-video button:hover span {
+  color: #fff;
+}
+.videito .texto-video button::before,
+.videito .texto-video button::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+.videito .texto-video button::before {
+  content: "";
+  background: #f67996;
+  width: 120%;
+  left: -10%;
+  transform: skew(30deg);
+  transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+}
+.videito .texto-video button:hover::before {
+  transform: translate3d(100%, 0, 0);
 }
 
 /* ---------------fin video index-------------- */
