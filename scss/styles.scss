@@ -123,7 +123,7 @@ p{
     position: relative;
     display: grid;
     grid-template-columns: 800px auto;
-    border-bottom: #ff3967 solid;
+    border-bottom: #0f699d solid;
     border-top: #ff3967 solid;;
     background-color: #ff3967;
 
@@ -148,7 +148,7 @@ p{
           button{
             font-size: $pmedium;
             position: absolute;
-            left: 40px;
+            left: 20px;
             bottom: 50px;
             outline: none;
             cursor: pointer;
@@ -156,19 +156,21 @@ p{
             padding: 0.9rem 2rem;
             margin: 0;
             display: inline-block;
-            letter-spacing: 0.2rem;
+            letter-spacing: 0.1rem;
             font-weight: 700;
             font-size: 17px;
             overflow: hidden;
             background: #3a98ce;
             color:#ffff;
             border-radius: 5px;
+            
 
             span {
               position: relative;
               z-index: 10;
               transition: color 0.4s;
               color: #fff;
+              
              }
 
             
@@ -214,7 +216,7 @@ p{
   /* ---------------lista de juegos 1--------------- */
 
   .card-producto {
-    max-width: 100%;
+    
     display: flex;
     gap: 40px;
     margin: 10px;
