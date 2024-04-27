@@ -182,7 +182,7 @@ p {
   display: flex;
   gap: 40px;
   margin: 10px;
-  overflow-x: scroll;
+  overflow-x: auto;
   padding-top: 40px;
 }
 .card-producto .card2 {
@@ -202,13 +202,14 @@ p {
 .card-producto .card2 img {
   border-top-right-radius: 17px;
   border-top-left-radius: 17px;
-  height: 250px;
+  height: 70%;
   object-fit: cover;
 }
 .card-producto .card2 h2 {
   font-size: 24px;
   margin: 20px;
   width: fit-content;
+  white-space: wrap;
 }
 .card-producto .card2:hover {
   background-color: #EF476F;
@@ -508,6 +509,13 @@ form .formulario-mensaje input:focus {
   }
   .catalogo {
     display: block;
+  }
+  .card-producto .card2 {
+    height: 300px;
+  }
+  .card-producto .card2 img {
+    width: 400px;
+    height: 200px;
   }
 }
 /* --------fin checkbox catalogo--------- */

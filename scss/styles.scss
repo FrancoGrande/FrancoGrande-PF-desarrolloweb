@@ -223,8 +223,9 @@ p{
     display: flex;
     gap: 40px;
     margin: 10px;
-    overflow-x: scroll ;
+    overflow-x: auto ; 
     padding-top: 40px;
+
 
     
     .card2 {
@@ -240,11 +241,11 @@ p{
       box-shadow: 0 1px 8px;
       transition: 0.7s;
       overflow: hidden;
-      
+
       img {
           border-top-right-radius: 17px;
           border-top-left-radius: 17px;
-          height: 250px;
+          height: 70%;
           object-fit: cover;
         }
 
@@ -252,6 +253,7 @@ p{
             font-size: 24px;
             margin: 20px;
             width: fit-content;
+            white-space: wrap;
           }
 
         
