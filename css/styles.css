@@ -107,7 +107,7 @@ p {
   position: relative;
   display: grid;
   grid-template-columns: 800px auto;
-  border-bottom: #0f699d solid;
+  border-bottom: #ff3967 solid;
   border-top: #ff3967 solid;
   background-color: #ff3967;
 }
@@ -139,7 +139,7 @@ p {
   font-weight: 700;
   font-size: 17px;
   overflow: hidden;
-  background: #3a98ce;
+  background: #019C9E;
   color: white;
   border-radius: 5px;
 }
@@ -188,44 +188,53 @@ p {
   overflow: hidden;
   height: 300px;
 }
-.card-producto .opinion {
+.card-producto .card2 {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
   width: 300px;
   margin-bottom: 25px;
-  border: 2px solid #4763ef;
+  border: 2px solid #EF476F;
   border-radius: 20px;
   background-color: #FCFCFC;
   box-shadow: 0 1px 8px;
   transition: 0.7s;
 }
-.card-producto .opinion p {
+.card-producto .card2 p {
   font-size: 14px;
   margin: 20px 40px 40px 20px;
   width: fit-content;
 }
-.card-producto .opinion h2 {
+.card-producto .card2 h2 {
   font-size: 24px;
   margin: 20px;
   width: fit-content;
   height: 40px;
 }
-.card-producto .opinion .valoracion {
+.card-producto .card2 .valoracion {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  border-bottom: 2px solid #4763ef;
+  border-bottom: 2px solid #EF476F;
   height: 10;
 }
-.card-producto .opinion .valoracion p {
+.card-producto .card2 .valoracion p {
   line-height: 50px;
   text-align: center;
 }
-.card-producto .opinion:hover {
-  background-color: #90c0ea;
+.card-producto .card2:hover {
+  background-color: #EF476F;
   box-shadow: 0 1px 20px;
   z-index: 100px;
+}
+.card-producto .card2:hover p {
+  color: #7df6f8;
+}
+.card-producto .card2:hover .valoracion {
+  border-bottom: 2px solid #7df6f8;
+}
+.card-producto .card2:hover .valoracion h2 {
+  color: #7df6f8;
 }
 
 /* -------------Galeria----------------- */
@@ -557,12 +566,11 @@ form .formulario-mensaje input:focus {
     overflow: hidden;
     height: 300px;
   }
-  .card-producto .opinion {
+  .card-producto .card2 {
     display: flex;
     flex-direction: column;
-    /* flex-grow: 1; */
     width: 200px;
-    height: 300px;
+    height: 100px;
     margin-bottom: 25px;
     border: 2px solid #EF476F;
     border-radius: 20px;
@@ -570,23 +578,23 @@ form .formulario-mensaje input:focus {
     box-shadow: 0 1px 8px;
     transition: 0.7s;
   }
-  .card-producto .opinion h2 {
+  .card-producto .card2 h2 {
     font-size: 15px;
     margin: 5px;
     width: fit-content;
     height: 20px;
     font-weight: bold;
   }
-  .card-producto .opinion p {
+  .card-producto .card2 p {
     font-size: 10px;
     margin: 10px 10px;
     width: fit-content;
   }
-  .card-producto .opinion img {
+  .card-producto .card2 img {
     object-fit: cover;
     height: 250px;
   }
-  .card-producto .opinion:hover {
+  .card-producto .card2:hover {
     background-color: #c7dbec;
     box-shadow: 0 1px 20px;
     z-index: 100px;
