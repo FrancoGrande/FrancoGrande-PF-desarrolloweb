@@ -52,12 +52,16 @@ p{
             }
 
             .nav-link:hover{
-                color: #b7e2e0;
+                color: #7df6f8;
               }
         }
 
         .navbar-brand{
             color: #fff;
+          }
+
+          .navbar-brand:hover{
+            color: #7df6f8;
           }
   }
 
@@ -216,81 +220,55 @@ p{
   /* ---------------lista de juegos 1--------------- */
 
   .card-producto {
-    
     display: flex;
     gap: 40px;
     margin: 10px;
-    overflow-x:auto ;
+    overflow-x: scroll ;
     padding-top: 40px;
 
-    img {
-        border-top-right-radius: 17px;
-        border-top-left-radius: 17px;
-        overflow: hidden;
-        height: 300px;
-      }
-
-      .card2 {
-        display: flex;
-        flex-direction: column;
-        flex-grow: 1;
-        width: 300px;
-        margin-bottom: 25px;
-        border: 2px solid #EF476F;
-        border-radius: 20px;
-        background-color: #FCFCFC;
-        box-shadow: 0 1px 8px;
-        transition: 0.7s;
-
-        p {
-            font-size: 14px;
-            margin: 20px 40px 40px 20px;
-            width: fit-content;
-          }
+    
+    .card2 {
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+      width: 500px;
+      height: 350px;
+      margin-bottom: 25px;
+      border: 2px solid #EF476F;
+      border-radius: 20px;
+      background-color: #FCFCFC;
+      box-shadow: 0 1px 8px;
+      transition: 0.7s;
+      overflow: hidden;
+      
+      img {
+          border-top-right-radius: 17px;
+          border-top-left-radius: 17px;
+          height: 250px;
+          object-fit: cover;
+        }
 
         h2 {
             font-size: 24px;
             margin: 20px;
             width: fit-content;
-            height: 40px;
           }
 
-        .valoracion {
-            display: flex;
-            justify-content: space-between;
-            align-items: baseline;
-            border-bottom: 2px solid #EF476F;
-            height: 10;
-
-            p {
-                line-height: 50px;
-                text-align: center;
-              }
-          }
+        
       }
 
       .card2:hover {
         background-color: #EF476F;
         box-shadow: 0 1px 20px;
         z-index: 100px;
-        
-
-        p{
-          color: #7df6f8;
-        }
-
-        .valoracion{
-          border-bottom: 2px solid #7df6f8;
-          
+            
           h2{
             color: #7df6f8;
           }
 
-
         }
 
       }
-  }
   
   /* -------------Galeria----------------- */
 
@@ -383,6 +361,7 @@ p{
   .catalogo{
     display: grid;
     grid-template-columns:20% 80% ;
+    grid-template-rows: 5% 90% 5%;
     grid-template-areas: 
     "header header"
     "formulario juegos"

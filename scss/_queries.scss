@@ -133,11 +133,10 @@
   /* ---------cards---------------- */
 
   .card-producto {
-    max-width: 100%;
     display: flex;
     gap: 40px;
     margin: 10px;
-    overflow-x:auto ;
+    overflow-x: scroll ;
     padding-top: 40px;
 
     img {
@@ -150,9 +149,9 @@
       .card2 {
         display: flex;
         flex-direction: column;
-        
-        width: 200px;
-        height: 100px;
+        flex-grow: 1;
+        width: 450px;
+        height: 300px;
         margin-bottom: 25px;
         border: 2px solid #EF476F;
         border-radius: 20px;
@@ -175,8 +174,7 @@
           }
 
           img {
-            object-fit: cover;
-            height: 250px;       
+            object-fit: cover;      
           }
       }
 
@@ -184,19 +182,6 @@
         background-color: #c7dbec;
         box-shadow: 0 1px 20px;
         z-index: 100px;
-      }
-
-      .valoracion {
-        display: flex;
-        justify-content: space-between;
-        align-items: baseline;
-        border-bottom: 2px solid #EF476F;
-        height: 10;
-
-        p {
-            line-height: 50px;
-            text-align: center;
-          }     
       }
   }
 /* ----------- fin cards---------------- */
