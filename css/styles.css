@@ -2,6 +2,7 @@
 /* -------background-------- */
 /* --------tamaño de h------ */
 /* --------tamaño de p------- */
+/* --------galeria--------- */
 * {
   margin: 0;
   padding: 0;
@@ -182,7 +183,7 @@ p {
   display: flex;
   gap: 40px;
   margin: 10px;
-  overflow-x: auto;
+  overflow-x: hidden;
   padding-top: 40px;
 }
 .card-producto .card2 {
@@ -234,45 +235,59 @@ p {
   grid-template-areas: "cthulhu cthulhu catan taco " "censj dados dados gaia " "censj gaia2 gaia2 hdp " "random2 melomano reino reino " "random2 random1 random1 monopoly ";
 }
 .galeria-conteiner .cthulhu {
+  border: #25b3b6 solid;
   grid-area: cthulhu;
 }
 .galeria-conteiner .catan {
+  border: #25b3b6 solid;
   grid-area: catan;
 }
 .galeria-conteiner .censj {
+  border: #25b3b6 solid;
   grid-area: censj;
 }
 .galeria-conteiner .dados {
+  border: #25b3b6 solid;
   grid-area: dados;
 }
 .galeria-conteiner .dyd {
+  border: #25b3b6 solid;
   grid-area: dados;
 }
 .galeria-conteiner .gaia {
+  border: #25b3b6 solid;
   grid-area: gaia;
 }
 .galeria-conteiner .gaia2 {
+  border: #25b3b6 solid;
   grid-area: gaia2;
 }
 .galeria-conteiner .hdp {
+  border: #25b3b6 solid;
   grid-area: hdp;
 }
 .galeria-conteiner .random2 {
+  border: #25b3b6 solid;
   grid-area: random2;
 }
 .galeria-conteiner .melomano {
+  border: #25b3b6 solid;
   grid-area: melomano;
 }
 .galeria-conteiner .reino {
+  border: #25b3b6 solid;
   grid-area: reino;
 }
 .galeria-conteiner .random1 {
+  border: #25b3b6 solid;
   grid-area: random1;
 }
 .galeria-conteiner .monopoly {
+  border: #25b3b6 solid;
   grid-area: monopoly;
 }
 .galeria-conteiner .taco {
+  border: #25b3b6 solid;
   grid-area: taco;
 }
 
@@ -444,6 +459,7 @@ form .formulario-mensaje input:focus {
 /* -------background-------- */
 /* --------tamaño de h------ */
 /* --------tamaño de p------- */
+/* --------galeria--------- */
 /* ------------responsive---------------- */
 @media (max-width: 1200px) {
   .articulo1 {
@@ -545,22 +561,22 @@ form .formulario-mensaje input:focus {
   /* ---------cards---------------- */
   .card-producto {
     display: flex;
+    width: auto;
+    height: auto;
+    overflow-y: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
     gap: 40px;
     margin: 10px;
-    overflow-x: scroll;
     padding-top: 40px;
-  }
-  .card-producto img {
-    border-top-right-radius: 17px;
-    border-top-left-radius: 17px;
-    overflow: hidden;
-    height: 300px;
+    flex-grow: 1;
+    flex-shrink: 1;
   }
   .card-producto .card2 {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
-    width: 450px;
+    width: 350px;
     height: 300px;
     margin-bottom: 25px;
     border: 2px solid #EF476F;
@@ -570,24 +586,27 @@ form .formulario-mensaje input:focus {
     transition: 0.7s;
   }
   .card-producto .card2 h2 {
-    font-size: 15px;
-    margin: 5px;
+    font: size 30px;
+    justify-self: center;
     width: fit-content;
     height: 20px;
     font-weight: bold;
-  }
-  .card-producto .card2 p {
-    font-size: 10px;
-    margin: 10px 10px;
-    width: fit-content;
+    align-self: center;
   }
   .card-producto .card2 img {
+    border-top-right-radius: 17px;
+    border-top-left-radius: 17px;
+    overflow: hidden;
     object-fit: cover;
+    width: auto;
   }
   .card-producto .card2:hover {
-    background-color: #c7dbec;
+    background-color: #EF476F;
     box-shadow: 0 1px 20px;
     z-index: 100px;
+  }
+  .card-producto .card2:hover h2 {
+    color: #7df6f8;
   }
   /* ----------- fin cards---------------- */
   /* ------------sobre nosotros----------- */

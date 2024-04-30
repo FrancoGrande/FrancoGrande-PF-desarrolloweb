@@ -146,23 +146,22 @@
 
   .card-producto {
     display: flex;
+    width: auto;
+    height: auto;
+    overflow-y: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
     gap: 40px;
     margin: 10px;
-    overflow-x: scroll ;
     padding-top: 40px;
-
-    img {
-        border-top-right-radius: 17px;
-        border-top-left-radius: 17px;
-        overflow: hidden;
-        height: 300px;
-      }
+    flex-grow: 1;
+    flex-shrink: 1;
 
       .card2 {
         display: flex;
         flex-direction: column;
         flex-grow: 1;
-        width: 450px;
+        width: 350px;
         height: 300px;
         margin-bottom: 25px;
         border: 2px solid #EF476F;
@@ -170,31 +169,37 @@
         background-color: #FCFCFC;
         box-shadow: 0 1px 8px;
         transition: 0.7s;
+        
 
         h2 {
-            font-size:15px;
-            margin: 5px;
+            font: size 30px;
+            justify-self: center;
             width: fit-content;
             height: 20px;
             font-weight: bold;
+            align-self: center;
           }
 
-          p {
-            font-size: 10px;
-            margin: 10px 10px;
-            width: fit-content;
-          }
 
           img {
-            object-fit: cover;      
+            border-top-right-radius: 17px;
+            border-top-left-radius: 17px;
+            overflow: hidden;
+            object-fit: cover;
+            width: auto;  
+
           }
       }
 
       .card2:hover {
-        background-color: #c7dbec;
+        background-color: #EF476F;
         box-shadow: 0 1px 20px;
         z-index: 100px;
-      }
+            
+          h2{
+            color: #7df6f8;
+          }
+        }
   }
 /* ----------- fin cards---------------- */
 

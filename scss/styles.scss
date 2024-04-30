@@ -130,6 +130,7 @@ p{
     border-bottom: #ff3967 solid;
     border-top: #ff3967 solid;;
     background-color: #ff3967;
+    
 
     .texto-video{
         position: relative;
@@ -223,11 +224,9 @@ p{
     display: flex;
     gap: 40px;
     margin: 10px;
-    overflow-x: auto ; 
+    overflow-x: hidden ; 
     padding-top: 40px;
 
-
-    
     .card2 {
       display: flex;
       flex-direction: column;
@@ -279,6 +278,7 @@ p{
   }
 
   .galeria-conteiner{
+    
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(5, 1fr);
@@ -292,59 +292,73 @@ p{
     "random2 random1 random1 monopoly ";
 
     .cthulhu{
+        border:$bordeg;
         grid-area: cthulhu;
       }
       
       .catan{
+        border:$bordeg;
         grid-area: catan;
       
       }
 
       .censj{
+        border:$bordeg;
         grid-area: censj;
       }
 
       .dados{
+        border:$bordeg;
         grid-area: dados;
       }
 
       .dyd{
+        border:$bordeg;
         grid-area: dados;
       }
 
       .gaia{
+        border:$bordeg;
         grid-area: gaia;
       }
 
       .gaia2{
+        border:$bordeg;
         grid-area: gaia2;
       }
 
       .hdp{
+        border:$bordeg;
         grid-area: hdp;
       }
 
       .random2{
+        border:$bordeg;
         grid-area: random2;
       }
 
       .melomano{
+        border:$bordeg;
         grid-area: melomano;
       }
 
       .reino{
+        border:$bordeg;
         grid-area: reino;
       }
 
       .random1{
+        border:$bordeg;
         grid-area: random1;
       }
 
       .monopoly{
+        border:$bordeg;
         grid-area: monopoly;
       }
 
       .taco{
+        border:$bordeg;
         grid-area: taco;
       }
   }
